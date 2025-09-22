@@ -4,8 +4,8 @@ plugins {
 
 val buildNumber = project.findProperty("BUILD_NUMBER") ?: "SNAPSHOT"
 
-group = "ru.enzhine"
-version = "1.0.0_${buildNumber}"
+group = "ru.enzhine.pipo"
+version = "0.0-${buildNumber}"
 
 repositories {
     mavenCentral()
