@@ -20,7 +20,9 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build
+      - name: Build Jar
+        env:
+          BUILD_NUMBER: ${{ github.run_number }}
         run: |
           chmod +x ./gradlew
           ./gradlew build
