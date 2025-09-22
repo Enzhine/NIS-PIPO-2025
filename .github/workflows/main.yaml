@@ -13,10 +13,14 @@ jobs:
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
+
       - name: Setup JDK
         uses: actions/setup-java@v2
         with:
-          java-version: '24'
+          java-version: '17'
           distribution: 'temurin'
+
       - name: Build
-        run: echo "Hello Github!"
+        run: |
+          chmod +x ./gradlew
+          ./gradlew build
