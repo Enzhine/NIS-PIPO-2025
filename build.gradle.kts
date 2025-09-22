@@ -2,8 +2,8 @@ plugins {
     kotlin("jvm") version "2.0.21"
 }
 
-group = "org.example"
-version = "1.0-SNAPSHOT"
+group = "ru.enzhine"
+version = "1.0.0"
 
 repositories {
     mavenCentral()

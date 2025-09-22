@@ -24,3 +24,9 @@ jobs:
         run: |
           chmod +x ./gradlew
           ./gradlew build
+
+      - name: Upload artifact
+        uses: actions/upload-artifacts@v4
+        with:
+          name: todo-list
+          path: build/libs/*
