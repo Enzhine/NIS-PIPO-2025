@@ -22,7 +22,7 @@ jobs:
 
       - name: Build Jar
         env:
-          BUILD_NUMBER: ${{ github.run_number }}
+          ORG_GRADLE_PROJECT_BUILD_NUMBER: ${{ github.run_number }}
         run: |
           chmod +x ./gradlew
           ./gradlew build
